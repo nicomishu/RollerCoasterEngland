@@ -57,11 +57,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/RollerCoasterEngland.loader.js";
+      var loaderUrl = buildUrl + "/roller-coaster-england.loader.js";
       var config = {
-        dataUrl: buildUrl + "/RollerCoasterEngland.data.unityweb",
-        frameworkUrl: buildUrl + "/RollerCoasterEngland.framework.js.unityweb",
-        codeUrl: buildUrl + "/RollerCoasterEngland.wasm.unityweb",
+        dataUrl: buildUrl + "/roller-coaster-england.data.unityweb",
+        frameworkUrl: buildUrl + "/roller-coaster-england.framework.js.unityweb",
+        codeUrl: buildUrl + "/roller-coaster-england.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "The Super Challenge",
         productName: "Roller Coaster England",
@@ -98,6 +98,7 @@
         canvas.style.height = "640px";
       }
 
+      canvas.style.background = "url('" + buildUrl + "/roller-coaster-england.jpg.unityweb') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
